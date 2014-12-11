@@ -60,4 +60,4 @@ done
 $FIND $DB_BACKUP -type f -mtime +7 | xargs rm -vf
 
 # Send to remote location via rsync
-# rsync -ahP --delete /path/to/backup/folder user@remote_ip:/remote/folder
+rsync -ahP --delete /path/to/backup/folder user@remote_ip:/remote/folder
